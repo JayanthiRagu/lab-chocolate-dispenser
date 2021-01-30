@@ -412,9 +412,7 @@ describe("Sort chocolates based on count in each color - sortChocolateBasedOnCou
 
     let temp = ["red", "blue", "green", "red"];
 
-    sortChocolateBasedOnCount(temp);
-
-    let actualResult = temp;
+    let actualResult = sortChocolateBasedOnCount(temp);
 
     expect(actualResult).toEqual(expectedResult);
   });
@@ -717,7 +715,7 @@ describe("Change the color of chocolates - changeChocolateColorAllOfxCount", fun
 
   it("Change the color of  green chocolates to blue and return the array", function () {
 
-    let expectedResult = [3, ["blue", "red", "blue", "blue"]];
+    let expectedResult = [1, ["blue", "red", "blue", "blue"]];
 
     let actualResult = changeChocolateColorAllOfxCount(
       candies,
